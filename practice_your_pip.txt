@@ -1,0 +1,41 @@
+pip install Django
+	- ran command, 2 files were installed, Django-1.11.2 and pytz-2017.2
+	- Not entirely sure what pytz, but a brief search states that it’s “World 	
+		Timezone Definitions”  
+
+pip list
+	- ran command and got a red line warning “DEPRECATION: The default format 	
+		will switch to columns in the future. You can use --format=(legacy|
+		columns) (or define a format=(legacy|columns) in your pip.conf under 		the [list] section) to disable this warning.” 
+	- found a stack overflow from 6 months ago addressing this message.  Not sure 		when this feature will actually change to no longer need this message, 		but also not 100% sure what the impact of this feature change would 			be.  
+	- Got a list that included Django (1.11.2), pip (9.0.1), pytz (2017.2), setup 		tools (32.1.0), and wheel (0.29.0)
+	- Not entirely sure what wheel is either, brief search says it’s a type of 	
+		compressed archive
+
+pip install Django
+	- running this command again gave me what amounts to a confirmation that this 		was already installed with the message “Requirement already satisfied” 		followed by the location of the Django and pytz packages.
+
+pip freeze 
+	- this command showed me just the Django and pytz files (not the pip, setup 		tools, or wheel that I saw in the list command)
+	- additionally, it displayed their versions with == rather than in ()
+
+cd ~/Desktop . . . pip freeze > requirements.txt . . . ls
+	- a “requirements.txt” file is now on my desktop
+
+pip uninstall Django 
+	- first it displayed a very long list of files connected to Django that would 		be uninstalled and asked for confirmation to proceed
+	- after I confirmed I got message stating that Django was successfully 			uninstalled
+
+pip show Django
+	- was given another command line, no response
+
+pip search Flask
+	- was given a long list of packages(?) along with descriptions
+	- chose to at random to google search:
+		1) perfume (0.2) - Simple Object Oriented layer for Flask.
+		2) Flask-Alchemy (0.1) - The fastest markdown parser in pure Python
+	- found both in the “Python Package Index”
+	- again, not 100% sure what these are, but wondering if they are similar to 		the libraries we used during web fun
+
+
+
